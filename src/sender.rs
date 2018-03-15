@@ -57,6 +57,7 @@ impl<S> Writer<S>
 
 /// A Sender that wraps a Writer and provides a default implementation using
 /// DataFrames and Messages.
+#[derive(Debug)]
 pub struct Sender {
 	mask: bool,
 }

@@ -30,6 +30,7 @@ impl OptionalTlsAcceptor for TlsAcceptor {}
 /// This struct is all the information that is recovered from a failed
 /// websocket handshake, in case one wants to use the connection for something
 /// else (such as HTTP).
+#[derive(Debug)]
 pub struct InvalidConnection<S, B>
 	where S: Stream
 {

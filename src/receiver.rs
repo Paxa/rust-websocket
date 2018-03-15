@@ -70,6 +70,7 @@ impl<S> Reader<S>
 
 /// A Receiver that wraps a Reader and provides a default implementation using
 /// DataFrames and Messages.
+#[derive(Debug)]
 pub struct Receiver {
 	buffer: Vec<DataFrame>,
 	mask: bool,
